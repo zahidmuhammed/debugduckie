@@ -11,16 +11,16 @@
     <script type="module" src="index.js"></script>
     <title>Debug Duckie</title>
   </head>
-  <body class="h-screen w-screen flex flex-col justify-center items-center">
+  <body class="h-[100svh] w-screen flex flex-col justify-center items-center">
     <div
-      class="absolute inset-0 h-screen w-screen bg-black bg-[linear-gradient(to_right,#ffffff12_1px,transparent_1px),linear-gradient(to_bottom,#ffffff12_1px,transparent_1px)] bg-[size:24px_24px]"
+      class="absolute inset-0 h-[100svh] w-screen bg-black bg-[linear-gradient(to_right,#ffffff12_1px,transparent_1px),linear-gradient(to_bottom,#ffffff12_1px,transparent_1px)] bg-[size:24px_24px]"
     ></div>
     <main
       class="relative flex flex-col justify-center items-center h-screen w-screen"
     >
       <button
         id="settingsToggle"
-        class="absolute cursor-pointer top-10 right-10 p-2 rounded-lg shadow-md z-10"
+        class="absolute cursor-pointer top-5 md:top-10 right-5 md:right-10 p-2 rounded-lg shadow-md z-10"
         aria-label="Toggle Settings"
       >
         <svg
@@ -47,7 +47,7 @@
 
       <button
         id="infoToggle"
-        class="absolute cursor-pointer top-10 right-20 p-2 rounded-lg shadow-md z-10"
+        class="absolute cursor-pointer top-5 md:top-10 right-14 md:right-20 p-2 rounded-lg shadow-md z-10"
         aria-label="Toggle Info"
       >
         <svg
@@ -68,7 +68,7 @@
 
       <div
         id="controlPanel"
-        class="control-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-22 right-10 hidden z-10"
+        class="control-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-16 md:top-22 right-0 mx-5 md:mx-0 md:right-10 hidden z-10"
       >
         <div class="grid grid-cols-1 gap-4">
           <div class="control-group">
@@ -128,7 +128,7 @@
 
       <div
         id="infoPanel"
-        class="info-panel mb-4 ml-2 p-4 bg-gray-100 rounded-lg shadow-md absolute top-22 right-10 hidden z-10"
+        class="info-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-16 md:top-22 right-0 mx-5 md:mx-0 md:right-10 hidden z-10"
       >
         <div class="grid grid-cols-1 gap-4">
           <h2 class="text-lg font-semibold">
@@ -164,7 +164,7 @@
       <a
         href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
         target="_blank"
-        class="cursor-pointer absolute bottom-2 right-2 text-sm text-gray-600 text-white hover:underline px-3 py-1 z-10"
+        class="cursor-pointer absolute text-xs bottom-2 right-2 md:text-sm text-gray-400 hover:underline px-3 py-1 z-10"
       >
         Learn about Rubber Duck Debugging
       </a>
