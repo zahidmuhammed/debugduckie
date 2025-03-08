@@ -18,57 +18,98 @@
     <main
       class="relative flex flex-col justify-center items-center h-screen w-screen"
     >
-      <button
-        id="settingsToggle"
-        class="absolute cursor-pointer top-5 md:top-10 right-5 md:right-10 p-2 rounded-lg shadow-md z-10"
-        aria-label="Toggle Settings"
+      <div
+        class="absolute top-5 md:top-8 px-5 md:px-36 z-10 w-full flex justify-between items-center"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="white"
+        <a
+          href="https://www.twospoon.ai/"
+          target="_blank"
+          class="cursor-pointer"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+          <img
+            draggable="false"
+            src="./ts_logo_white.svg"
+            alt="Debug Duckie"
+            class="h-12 w-24 md:h-20 md:w-40"
           />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-        </svg>
-      </button>
+        </a>
 
-      <button
-        id="infoToggle"
-        class="absolute cursor-pointer top-5 md:top-10 right-14 md:right-20 p-2 rounded-lg shadow-md z-10"
-        aria-label="Toggle Info"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="white"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M12 18h.01M12 3a9 9 0 100 18 9 9 0 000-18z"
-          />
-        </svg>
-      </button>
+        <div class="flex flex-wrap gap-2">
+          <button
+            id="fullscreenToggle"
+            class="cursor-pointer p-2 rounded-lg shadow-md"
+            aria-label="Toggle Fullscreen"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-maximize"
+            >
+              <path
+                d="M8 3H5a2 2 0 0 0-2 2v3 M21 8V5a2 2 0 0 0-2-2h-3 M3 16v3a2 2 0 0 0 2 2h3 M16 21h3a2 2 0 0 0 2-2v-3"
+              />
+            </svg>
+          </button>
+
+          <button
+            id="settingsToggle"
+            class="cursor-pointer p-2 rounded-lg shadow-md"
+            aria-label="Toggle Settings"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </button>
+
+          <button
+            id="infoToggle"
+            class="cursor-pointer p-2 rounded-lg shadow-md"
+            aria-label="Toggle Info"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M12 18h.01M12 3a9 9 0 100 18 9 9 0 000-18z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <div
         id="controlPanel"
-        class="control-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-16 md:top-22 right-0 mx-5 md:mx-0 md:right-10 hidden z-10"
+        class="control-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-20 md:top-24 right-0 mx-5 md:mx-0 md:right-36 hidden z-10"
       >
         <div class="grid grid-cols-1 gap-4">
           <div class="control-group">
@@ -84,7 +125,7 @@
                   checked
                 />
                 <div
-                  class="relative w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-blue-600"
+                  class="relative w-7 h-4 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-black"
                 ></div>
                 <span class="ms-2 text-xs font-medium text-gray-700"
                   >Enable</span
@@ -98,7 +139,7 @@
                 min="0"
                 max="360"
                 value="0"
-                class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black"
               />
               <input
                 type="range"
@@ -106,7 +147,7 @@
                 min="0"
                 max="360"
                 value="0"
-                class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black"
               />
               <input
                 type="range"
@@ -114,7 +155,7 @@
                 min="0"
                 max="360"
                 value="0"
-                class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black"
               />
             </div>
             <div class="grid grid-cols-3 gap-2 text-xs text-gray-500 mt-1">
@@ -128,11 +169,35 @@
 
       <div
         id="infoPanel"
-        class="info-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-16 md:top-22 right-0 mx-5 md:mx-0 md:right-10 hidden z-10"
+        class="info-panel mb-4 p-4 bg-gray-100 rounded-lg shadow-md absolute top-20 md:top-24 right-0 mx-5 md:mx-0 md:right-36 hidden z-10"
       >
         <div class="grid grid-cols-1 gap-4">
-          <h2 class="text-lg font-semibold">
+          <h2 class="text-lg font-semibold flex items-center gap-2">
             Learn About Rubber Duck Debugging
+
+            <a
+              href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
+              target="_blank"
+              class="cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-external-link"
+              >
+                <path d="M15 3h6v6" />
+                <path d="M10 14 21 3" />
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                />
+              </svg>
+            </a>
           </h2>
           <div class="text-sm text-gray-600 space-y-2">
             <h3 class="font-medium"><strong>How to use Debug Duck</strong>:</h3>
@@ -160,14 +225,6 @@
           </div>
         </div>
       </div>
-
-      <a
-        href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
-        target="_blank"
-        class="cursor-pointer absolute text-xs bottom-2 right-2 md:text-sm text-gray-400 hover:underline px-3 py-1 z-10"
-      >
-        Learn about Rubber Duck Debugging
-      </a>
 
       <div
         id="container3D"
